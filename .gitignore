@@ -160,4 +160,4 @@ cython_debug/
 #.idea/
 
 #Other
-files/output.xlsx
+files/
