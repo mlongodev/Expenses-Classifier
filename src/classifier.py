@@ -16,7 +16,7 @@ def get_label(desc):
     else:
         prompt_private_info = ''
 
-    content_system = ("I would like to classify my expenses using specific categories. In input you will have the list of categories and the description of a expense. Please associate a category to the expense. "
+    content_system = ("I would like to classify my expenses using specific categories. In input you will have the list of categories and the description of an expense. Please associate a category to the expense. "
                       "Please only respond with the exact name of the category listed and nothing else. " 
                      + "Categories: \n") + prompt_cat_list + "\n" + prompt_private_info
 
