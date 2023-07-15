@@ -18,7 +18,7 @@ def get_label(desc):
 
     content_system = ("I would like to classify my expenses using specific categories. In input you will have the list of categories and the description of a expense. Please associate a category to the expense. "
                       "Please only respond with the exact name of the category listed and nothing else. " 
-                     + "Categories \n") + prompt_cat_list + "\n" + prompt_private_info
+                     + "Categories: \n") + prompt_cat_list + "\n" + prompt_private_info
 
     openai.organization = os.environ['OPENAI_ORG_ID']
     openai.api_key = os.environ['OPENAI_API_KEY']
