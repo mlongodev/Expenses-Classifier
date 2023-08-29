@@ -26,7 +26,7 @@ def get_label(desc):
     model="gpt-3.5-turbo",
     messages=[
         {"role": "system", "content": content_system},
-        {"role": "user", "content": "Expense description: " + desc}]
+        {"role": "user", "content": "Expense description: " + str(desc)}]
     )
     data = completion.choices[0].message
 

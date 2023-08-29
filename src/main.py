@@ -22,7 +22,7 @@ conc_df.reset_index(drop=True, inplace=True)
 for index, row in conc_df.iterrows(): 
     label = str(get_label(row[get_desc_column()]))
     conc_df.at[index, get_label_column()] = label
-    print(row[get_desc_column()] + ' - ' + label)
+    print(str(row[get_desc_column()]) + ' - ' + label)
     time.sleep(0.5)
 
 conc_df.to_excel('files/output.xlsx', index=False)
