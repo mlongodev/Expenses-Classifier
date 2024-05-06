@@ -20,7 +20,8 @@ conc_df[get_label_column()] = None
 conc_df.reset_index(drop=True, inplace=True)
 
 for index, row in conc_df.iterrows(): 
-    label = str(get_label(row[get_desc_column()]))
+    #label = str(get_label(row[get_desc_column()])) #Uncomment this line to enable GPT
+    label = str('') #Comment this line to enable GPT
     conc_df.at[index, get_label_column()] = label
     print(str(row[get_desc_column()]) + ' - ' + label)
     time.sleep(0.5)
